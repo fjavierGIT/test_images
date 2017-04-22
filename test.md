@@ -42,7 +42,7 @@ with(myDataf.steps, hist(steps,breaks=seq(from=0, to=25000, by=2500),
                     col="red", main = "Histogram of total steps by day"))
 ```
 
-![](test_files/figure-html/Histogram steps x day-1.png)<!-- -->
+![](test_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 Mean and median number of steps taken each day
 
@@ -74,7 +74,7 @@ with(myDataf.steps.average,
                     main = "Average number of steps taken"))
 ```
 
-![](test_files/figure-html/Plot Avg steps-1.png)<!-- -->
+![](test_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 The 5-minute interval that, on average, contains the maximum number of steps
 
@@ -152,7 +152,7 @@ with(myDataf.filled.steps, hist(steps,breaks=seq(from=0, to=25000, by=2500),
                     col="red", main = "Histogram of total steps by day (Missing Values Imputed)"))
 ```
 
-![](test_files/figure-html/Histogram missing imputed-1.png)<!-- -->
+![](test_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ```r
 mean(myDataf.filled.steps$steps, na.rm = TRUE)
@@ -191,5 +191,5 @@ xyplot(steps ~ interval | weekday, data = myDataf.filled.average,
        layout = c(1, 2), type='l', ylab = "Number of steps")
 ```
 
-![](test_files/figure-html/Panel Plot Weekdays vs Weekend-1.png)<!-- -->
+![](test_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
